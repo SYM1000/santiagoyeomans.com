@@ -5,10 +5,6 @@ html{
 body{
   margin: 0;
   padding: 0;
-  background-repeat: no-repeat;
-  background-image: url(bg4.jpg);
-  background-size: cover;
-  animation: slide 10s infinite;
 }
 
 .spinner {
@@ -62,6 +58,15 @@ body{
 
   }
 
+.fondo{
+  padding: 1px;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-image: url(bg4.jpg);
+  background-size: cover;
+  animation: slide 10s infinite;
+}
+
 .box{
   width: 45%;
   background: rgba(0, 0, 0, 0.4);
@@ -80,8 +85,7 @@ background: #2d3436;
 display: block;
 width: 100%;
 height: 210px;
-position: absolute;
-
+position: relative;
 }
 
 
@@ -144,6 +148,7 @@ ul{
   margin: 0 auto;
   transform: translate(-50%,-50%);
   font-family: 'Montserrat', sans-serif;
+
 }
 
 .btn{
@@ -192,13 +197,12 @@ ul{
   width: 100%;
   margin: auto;
   padding: 0;
-  position: absolute;
+
   background-image: url(bg6.jpg);
   background-size: cover;
   max-width: 100%;
   max-height: auto;
   background-repeat: no-repeat;
-  margin-top: 780px;
   margin-bottom: auto;
 }
 
@@ -208,7 +212,6 @@ ul{
   text-transform: uppercase;
   font-size: 70px;
   font-family: 'Montserrat', sans-serif;
-  margin-top: 25px;
   margin-bottom: 40px;
   z-index: +1;
   position: center;
@@ -233,8 +236,6 @@ ul{
     overflow: hidden;
     transition: 0.7s all;
     margin-bottom: 5%;
-
-
     text-transform: uppercase;
 }
 
@@ -349,13 +350,11 @@ ul{
   width: 100%;
   margin: auto;
   padding: 0;
-  position: absolute;
+
   background-image: url(bg10.jpg);
   background-size: cover;
   max-width: 100%;
   background-repeat: no-repeat;
-  margin-top: auto;
-  margin-bottom: auto;
 
 
 }
@@ -366,7 +365,7 @@ ul{
   text-transform: uppercase;
   font-size: 70px;
   font-family: 'Montserrat', sans-serif;
-  margin-top: 225px;
+  margin-top: auto;
   z-index: +1;
   position: center;
 }
