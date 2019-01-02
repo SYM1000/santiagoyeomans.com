@@ -7,36 +7,6 @@ body{
   padding: 0;
 }
 
-.spinner {
-  width: 40px;
-  height: 40px;
-  background-color: #333;
-  margin: 100px auto;
-  -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
-  animation: sk-rotateplane 1.2s infinite ease-in-out;
-}
-
-@-webkit-keyframes sk-rotateplane {
-  0% { -webkit-transform: perspective(120px) }
-  50% { -webkit-transform: perspective(120px) rotateY(180deg) }
-  100% { -webkit-transform: perspective(120px) rotateY(180deg)  rotateX(180deg) }
-}
-
-@keyframes sk-rotateplane {
-  0% {
-    transform: perspective(120px) rotateX(0deg) rotateY(0deg);
-    -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg)
-  } 50% {
-    transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
-    -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg)
-  } 100% {
-    transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
-    -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
-  }
-}
-
-
-
 @keyframes slide {
   0%{
       background-image: url(bg4.jpg);
@@ -197,13 +167,13 @@ ul{
   width: 100%;
   margin: auto;
   padding: 0;
-
   background-image: url(bg6.jpg);
   background-size: cover;
   max-width: 100%;
   max-height: auto;
   background-repeat: no-repeat;
   margin-bottom: auto;
+
 }
 
 .hobbies h5{
@@ -346,7 +316,7 @@ ul{
   z-index: -2;
   opacity: 0.835;
   display: block;
-  height: 780px;
+  height: 700px;
   width: 100%;
   margin: auto;
   padding: 0;
@@ -580,4 +550,125 @@ ul{
 
 .container:after {
     clear: both;
+}
+
+.passions{
+  background-image: url(passions4.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+.passions h1{
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 70px;
+  padding-bottom: 10px;
+  margin-top: 40px;
+  color: white;
+  text-transform: uppercase;
+}
+.cen{
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
+  padding: 20px;
+}
+.passion{
+  display: inline-block;
+  width: calc(100% / 3);
+  margin: 0 -2px;
+  padding: 20px;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: 0.4s;
+  opacity: 0.70;
+  text-align: center;
+}
+.passion:hover{
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 15px;
+  opacity: 1;
+}
+.passion i{
+  color: white;
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+.passion h2{
+  font-size: 22px;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin: 0;
+  color: white;
+  text-align: center;
+}
+.passion p{
+  color: white;
+  font-size: 17px;
+  font-weight: 500;
+}
+@media screen and (max-width: 800px) {
+  .passion{
+    width: 50%;
+  }
+  .experiences h5{
+   font-size: 50px;
+  }
+  .box h1{
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .passion{
+    width: 100%;
+  }
+}
+
+
+.footer{
+  background-image: url(footer2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  width: 100%;
+  height: 250px;
+  text-align: center;
+  }
+
+.efecto{
+  background: rgba(0, 0, 0, 0.4);
+  height: 100%;
+  width: 100%;
+}
+
+.texto{
+position: relative;
+}
+
+.texto p{
+
+  color: white;
+  font-size: 70px;
+  align-content: center;
+  margin-bottom: 20px;
+
+}
+
+.boton{
+  top: 20%;
+  left: 50%;
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+.boton_final{
+    border: 3px solid white;
+    font-size: 21px;
+    color: white;
+    font-family: "montserrat";
+    text-decoration: none;
+    top: 50%;
+    padding: 10px 27px;
+    top: 50%;
+
 }
